@@ -12,7 +12,6 @@ This project is a web-based application that leverages **AI** to generate insigh
 - [Running the Application](#running-the-application)
 - [Usage](#usage)
 - [Video Tutorial](#video-tutorial)
-- [License](#license)
 
 ## Overview
 
@@ -33,80 +32,33 @@ Follow these steps to set up the AI-Powered Graph Generator on your local machin
 To get started, clone the repository using Git:
 
 ```bash
+# Clone the repository
 git clone https://github.com/yourusername/ai-powered-graph-generator.git
+
+# Navigate to the project directory
 cd ai-powered-graph-generator
-Install Dependencies
-Install the required Python packages using pip. It's recommended to use a virtual environment to manage dependencies:
 
-Create a virtual environment (if you don’t have one already):
-
-bash
-Copy code
+# Create a virtual environment (if you don't have one already)
 python -m venv venv
-Activate the virtual environment:
 
-On Windows:
-bash
-Copy code
+# Activate the virtual environment
+# On Windows:
 .\venv\Scripts\activate
-On macOS/Linux:
-bash
-Copy code
+# On macOS/Linux:
 source venv/bin/activate
-Install the required packages:
 
-bash
-Copy code
+# Install the required packages
 pip install -r requirements.txt
-If you don't have a requirements.txt file yet, you can create it by running:
 
-bash
-Copy code
+# If you don't have a requirements.txt file, create one with the installed packages
 pip freeze > requirements.txt
-The requirements.txt should include the following packages:
 
-Copy code
-dash
-dash-bootstrap-components
-plotly
-pandas
-flask-cors
-google-generativeai
-Set Up the API Key
-To use the Google Gemini API for generating insights, you need to set up an API key:
-
-Visit the Google Cloud Console.
-Create a project and enable the Google Gemini API.
-Generate an API key and replace the api_key placeholder in the following line in app.py:
-python
-Copy code
+# Set up the Google Gemini API Key in app.py
+# Replace the api_key placeholder with your API key
 genai.configure(api_key="YOUR_GOOGLE_GEMINI_API_KEY")
-Make sure to securely store your API key and do not expose it in public repositories.
 
-Running the Application
-To run the web application, simply execute the following command:
-
-bash
-Copy code
+# Run the application
 python app.py
-This will start the Dash server, and you can access the application in your browser by visiting:
-
-arduino
-Copy code
-http://127.0.0.1:8050/
-The application will allow you to upload datasets, choose chart types, query AI for insights, and view your generated graphs.
-
-Usage
-Once the application is running:
-
-Upload Your Dataset: Click on the Upload button to upload a CSV file.
-Select Graph Type: Choose from line, bar, scatter, pie, or histogram charts.
-Customize Graph Title: Enter a custom title for your graph.
-Select Columns: Choose which columns to plot on the X and Y axes.
-Generate Insights: Enter a query to ask the AI for insights about your data.
-View Insights and Graph: The AI will generate insights and update the graph based on your selections.
-Video Tutorial
-For a quick tutorial on how to use the application, watch the following video:
+ to watch the full demo on Vimeo.
 
 
-Click the image above to watch the full demo on Vimeo.
