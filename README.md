@@ -27,7 +27,7 @@ This application allows users to:
 
 Follow these steps to set up the AI-Powered Graph Generator on your local machine.
 
-### Clone the Repository
+
 
 To get started, clone the repository using Git:
 
@@ -62,23 +62,44 @@ python app.py
  
 ```
 
+## Conclusion
+Thank you for using the **AI-Powered Graph Generator**! This application empowers you to effortlessly visualize data, customize graphs, and gain insights using AI. Whether you're working with datasets in sales, performance metrics, or any other domain, this tool helps bring clarity to your data in just a few clicks.
+
+## Contributing
+We welcome contributions from the community. If you would like to contribute to the development of this project, please feel free to fork the repository and submit a pull request. Here’s how you can contribute:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Make your changes
+4. Commit your changes (`git commit -am 'Add new feature'`)
+5. Push to the branch (`git push origin feature-branch`)
+6. Open a pull request
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+- **Dash** for building the interactive UI framework
+- **Plotly** for the excellent charting library
+- **Google Gemini** for the AI-driven insights
+- **Vimeo** for video hosting
+
+## Contact
+For any inquiries or support, feel free to reach out:
+- Email: support@aigraphgen.com
+- GitHub Issues: [Create an Issue](https://github.com/yourusername/ai-powered-graph-generator/issues)
+
 ## Video Tutorial
 For a quick tutorial on how to use the application, watch the following video:
-
-### Watch the Demo
 
 [![Watch the video](https://img.youtube.com/vi/1034770132/maxresdefault.jpg)](https://vimeo.com/1034770132)
 
 Click the image above to watch the full demo on Vimeo.
 
-Alternatively, you can embed the video directly in the README (if supported by your platform):
+## Thank You!
+We hope you enjoy using the AI-Powered Graph Generator. If you have any feedback or suggestions, we’d love to hear from you!
 
-<div style="padding:53.13% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/1034770132?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-            frameborder="0" 
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-            title="AI-Powered Graph Generator - Demo Video"></iframe>
-</div>
-<script src="https://player.vimeo.com/api/player.js"></script>
+---
+
+© 2024 AI-Powered Graph Generator | All Rights Reserved
 
