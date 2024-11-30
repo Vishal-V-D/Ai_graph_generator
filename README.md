@@ -59,6 +59,26 @@ genai.configure(api_key="YOUR_GOOGLE_GEMINI_API_KEY")
 
 # Run the application
 python app.py
- to watch the full demo on Vimeo.
+ 
+```
 
+## Video Tutorial
+For a quick tutorial on how to use the application, watch the following video:
+
+### Watch the Demo
+
+[![Watch the video](https://img.youtube.com/vi/1034770132/maxresdefault.jpg)](https://vimeo.com/1034770132)
+
+Click the image above to watch the full demo on Vimeo.
+
+Alternatively, you can embed the video directly in the README (if supported by your platform):
+
+<div style="padding:53.13% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/1034770132?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+            title="AI-Powered Graph Generator - Demo Video"></iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
 
