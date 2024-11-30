@@ -86,7 +86,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 For any inquiries or support, feel free to reach out:
-- Email: support@aigraphgen.com
+- Email: vishalvd006@gmail.com
 - GitHub Issues: [Create an Issue](https://github.com/yourusername/ai-powered-graph-generator/issues)
 
 ## Video Tutorial
