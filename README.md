@@ -9,8 +9,8 @@ This project is a web-based application that leverages **AI** to generate insigh
   - [Clone the Repository](#clone-the-repository)
   - [Install Dependencies](#install-dependencies)
   - [Set Up the API Key](#set-up-the-api-key)
-- [Running the Application](#running-the-application)
-- [Usage](#usage)
+
+- [Usage](#conclusion)
 - [Video Tutorial](#video-tutorial)
 
 ## Overview
