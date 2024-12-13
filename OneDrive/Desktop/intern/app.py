@@ -150,13 +150,11 @@ def update_graph(graph_type, x_column, y_column, graph_title, user_query, row_ra
         return "Please upload a dataset.", "No data available."
     df = pd.read_json(data_json)
     
-    
     if not x_column or not y_column:
         return "Please select X and Y columns.", "No insights available."
     
     df = df.iloc[row_range[0]:row_range[1] + 1]
 
-    
     graph_title = graph_title or f"{x_column} vs {y_column}"
 
     if graph_type == 'line':
@@ -170,21 +168,24 @@ def update_graph(graph_type, x_column, y_column, graph_title, user_query, row_ra
     elif graph_type == 'histogram':
         fig = px.histogram(df, x=x_column, title=graph_title)
 
-    
     if user_query:
         data_description = f"Dataset Columns: {', '.join(df.columns)}"
         try:
             response = model.generate_content(f"Dataset Description: {data_description}\nUser Query: {user_query}")
             response_text = response.text.strip() if response and response.text else "No response from Gemini AI."
+
+            insights = response_text.replace("*", "").split("\n")  
+            formatted_insights = html.Ul([
+                html.Li(html.Span(line.strip(), style={"fontWeight": "bold"})) for line in insights if line.strip()
+            ])
             
-            
-            insights = [line.strip() for line in response_text.split("\n") if line.strip()]
-        
-            return dcc.Graph(figure=fig), html.Ul([html.Li(line) for line in insights])
+            return dcc.Graph(figure=fig), formatted_insights
         except Exception as e:
             return dcc.Graph(figure=fig), f"Error in AI query: {str(e)}"
     
     return dcc.Graph(figure=fig), "No query provided."
+
+
 
 
 
